@@ -1,10 +1,10 @@
 FROM node:14.15.3
 
-RUN mkdir -p /usr/src/app
+RUN mkdir -p /workspace
 
-WORKDIR /usr/src/app
+WORKDIR /workspace
 
-COPY package*.json ./
+COPY package.json ./
 
 RUN npm install
 

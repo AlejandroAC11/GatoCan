@@ -8,9 +8,9 @@ services:
         ports:
           - "5000:3000"
         links: 
-          - mongoDB
+          - mongo
         volumes: 
-          - ./../:/usr/src/app
+          - .:/workspace
     mongo:
         container_name: mongoDataBase
         image: mongo

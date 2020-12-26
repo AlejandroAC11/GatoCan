@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://mongoDB/mongoDataBase', {
+mongoose.connect('mongodb://mongo/mongoDataBase', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
