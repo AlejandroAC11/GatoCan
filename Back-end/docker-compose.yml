@@ -6,15 +6,20 @@ services:
         restart: always
         build: .
         ports:
-          - "5000:3000"
+          - "${API_PORTS}"
+        depends_on:
+          - mongo
         links: 
           - mongo
         volumes: 
           - .:/workspace
     mongo:
         container_name: mongoDataBase
-        image: mongo
+        image: mongo:4.0-xenial
+        environment:
+          MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+          MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
         ports:
-          - "27017:27017"
-        logging: 
-          driver: none
+          - "${MONGO_PORTS}"
+        volumes:
+          - ${MONGO_VOLUME}:/data/db
