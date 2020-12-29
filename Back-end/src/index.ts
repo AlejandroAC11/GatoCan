@@ -53,12 +53,11 @@ class App {
     private mongoSetup(): void {
         let mongoUrl: string;
         (mongoose as any).Promise = global.Promise;
-        console.log('VERSION MONGOOSE', mongoose.version);
         // tslint:disable-next-line:max-line-length 
         mongoUrl = `mongodb://${process.env.MONGO_USER}:${process.env.MONGO_PASS}@${process.env.MONGO_HOST}:${process.env.MONGO_PORT}/${process.env.MONGO_DB}` + this.authSource;
-        console.log('URL de conexion =>', mongoUrl);
+        // console.log('URL de conexion =>', mongoUrl);
         mongoose.set("useCreateIndex", true);
-        mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => console.log('Todo OK, Jose Luis')).catch(error => console.log('Error de conexion a BD => ', error));
+        mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => console.log('Conexión con MongoDB realizada con éxito')).catch(error => console.log('Error de conexion a BD => ', error));
     }
 }
 
