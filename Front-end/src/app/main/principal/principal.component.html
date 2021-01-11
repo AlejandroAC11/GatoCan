@@ -1,1 +1,34 @@
-<app-header></app-header>
+<div class="app-container">
+  <app-header class="header" (output)="snav.toggle()"></app-header>
+  <div class="main">
+    <mat-sidenav-container class="example-sidenav-container">
+      <mat-sidenav #snav [mode]="'side'">
+        <mat-nav-list>
+          <a>nav</a>
+          <a>nav</a>
+          <a>nav</a>
+          <a>nav</a>
+          <a>nav</a>
+          <a>nav</a>
+          <a>nav</a>
+          <a>nav</a>
+        </mat-nav-list>
+      </mat-sidenav>
+
+      <mat-sidenav-content>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+  <div class="footer">footer</div>
+</div>

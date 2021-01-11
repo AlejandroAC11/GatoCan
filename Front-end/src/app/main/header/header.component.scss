@@ -1,31 +1,36 @@
 .header-container {
+  display: grid;
+
+  grid-template-rows: repeat(3, max-content);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.first-row {
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+
   display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+}
+.foto-prin {
+  grid-row: 2 / -1;
+  grid-column: 1 / 2;
+}
+.foto-secundaria_1 {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+.foto-secundaria_2 {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
 }
 
-.header-is-mobile .header-toolbar {
-  position: fixed;
-  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
-  z-index: 2;
-}
 
-h1.header-app-name {
-  margin-left: 8px;
-}
 
-.header-sidenav-container {
-  /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
-     causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
-  flex: 1;
-}
 
-.header-is-mobile .header-sidenav-container {
-  /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
-     `<body>` to be our scrolling element for mobile layouts. */
-  flex: 1 0 auto;
+::ng-deep .mat-form-field-flex > .mat-form-field-infix { padding: 0.4em 0px !important;}
+::ng-deep .mat-form-field-label-wrapper { top: -1.5em; }
+
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+    transform: translateY(-1.1em) scale(.75);
+    width: 133.33333%;
 }

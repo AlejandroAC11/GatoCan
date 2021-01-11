@@ -1,0 +1,41 @@
+.app-container {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    grid-template-columns: 1fr;
+}
+
+.header {
+    grid-column: 1 / -1;
+}
+
+.main {
+    grid-column: 1 / -1;
+}
+
+.footer {
+    grid-column: 1 / -1;
+}
+
+
+
+
+
+.example-container {
+    width: 500px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+  }
