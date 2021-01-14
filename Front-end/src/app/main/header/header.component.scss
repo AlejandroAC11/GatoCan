@@ -23,8 +23,20 @@
   grid-row: 3 / 4;
   grid-column: 2 / 3;
 }
-
-
+.button-spain {
+  background-image: url('./../../../assets/img/spain-flag-icon.jpg');
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.button-galicia {
+  background-image: url('./../../../assets/img/galicia-flag.png');
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 
 
 ::ng-deep .mat-form-field-flex > .mat-form-field-infix { padding: 0.4em 0px !important;}
