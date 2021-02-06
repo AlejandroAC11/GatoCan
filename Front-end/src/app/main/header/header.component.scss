@@ -2,40 +2,72 @@
   display: grid;
 
   grid-template-rows: repeat(3, max-content);
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  
 }
 
 .first-row {
   grid-row: 1 / 2;
   grid-column: 1 / -1;
 
+  margin-top: 5px;
   display: flex;
+  justify-content: space-between;
+
+
+
+  &_loggin-form {
+    display: flex;
+
+    & > mat-form-field {
+      margin-right: 5px;
+    }
+    & > button {
+      align-self: baseline;
+      margin-top: 5px;
+      height: 30px;
+    }
+  }
+
+  &_container-flag {
+    
+    &_button-spain {
+      background-image: url('./../../../assets/img/spain-flag-icon.jpg');
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    &_button-galicia {
+      background-image: url('./../../../assets/img/galicia-flag.png');
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    & > button {
+      margin: 5px;
+    }
+  }
 }
+
 .foto-prin {
-  grid-row: 2 / -1;
-  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
 }
 .foto-secundaria_1 {
-  grid-row: 2 / 3;
-  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  grid-column: 1 / 4;
 }
 .foto-secundaria_2 {
   grid-row: 3 / 4;
-  grid-column: 2 / 3;
+  grid-column: 4 / 5;
 }
-.button-spain {
-  background-image: url('./../../../assets/img/spain-flag-icon.jpg');
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-.button-galicia {
-  background-image: url('./../../../assets/img/galicia-flag.png');
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+
+.responsive {
+  width: 100%;
 }
 
 
