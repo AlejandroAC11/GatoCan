@@ -1,7 +1,10 @@
 <div class="header-container">
-  <div class="first-row">
+  <div class="menu-container">
     <button mat-icon-button (click)="output.emit(true)"><mat-icon>menu</mat-icon></button>
-    <form [formGroup]="authForm" class ="first-row_loggin-form">
+  </div>
+  <!--
+  <div class="form-container">
+    <form [formGroup]="authForm">
       <mat-form-field appearance="outline">
         <mat-label>Usuario</mat-label>
         <input matInput formControlName="name">
@@ -15,21 +18,26 @@
         <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
         </button>
       </mat-form-field>
-  
+
       <button mat-raised-button>Entrar</button>
     </form>
-    <div class="first-row_container-flag">
-      <button mat-mini-fab color="primary" matTooltip="Cambiar a español" class="first-row_container-flag_button-spain" aria-label="Bandera España">
-      </button>
-      <button mat-mini-fab color="primary" matTooltip="Cambiar a gallego" class="first-row_container-flag_button-galicia" aria-label="Bandera Galicia">
-      </button>
-    </div>
+  </div>
+-->
+<div class="form-container">
+
+</div>  
+<div class="container-flag">
+  <button mat-raised-button color="primary"  class="" aria-label="">Acceder</button>
+    <button mat-mini-fab color="primary" matTooltip="Cambiar a español" class="container-flag_button-spain" aria-label="Bandera España">
+    </button>
+    <button mat-mini-fab color="primary" matTooltip="Cambiar a gallego" class="container-flag_button-galicia" aria-label="Bandera Galicia">
+    </button>
   </div>
   <div class="foto-prin">
     <img src="./../../../assets/img/foto-prin.png" alt="foto-prin" class="responsive">
   </div>
   <div class="foto-secundaria_1">    
-    <img src="./../../../assets/img/zooplus.png" alt="foto-prin" class="responsive">
+    <img src="./../../../assets/img/zooplus.png" alt="foto-prin" class="">
   </div>
   <div class="foto-secundaria_2">
     <img src="./../../../assets/img/publi-info.png" alt="foto-prin" class="responsive">

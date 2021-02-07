@@ -11,6 +11,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [],
@@ -19,6 +20,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MatSidenavModule,
     MatListModule,
     MatInputModule,
+    MatDividerModule,
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
@@ -29,6 +31,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
   exports: [
     MatSidenavModule,
     MatListModule,
+    MatDividerModule,
     MatInputModule,
     MatToolbarModule,
     MatButtonModule,

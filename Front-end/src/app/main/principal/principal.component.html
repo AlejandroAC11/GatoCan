@@ -1,32 +1,43 @@
 <div class="app-container">
   <app-header class="header" (output)="snav.toggle()"></app-header>
   <div class="main">
-    <mat-sidenav-container class="example-sidenav-container">
+    <mat-sidenav-container class="sidenav-container">
       <mat-sidenav #snav [mode]="'side'">
         <mat-nav-list>
-          <a>nav</a>
-          <a>nav</a>
-          <a>nav</a>
-          <a>nav</a>
-          <a>nav</a>
-          <a>nav</a>
-          <a>nav</a>
-          <a>nav</a>
+          <p>Acerca de GatoCan</p>
+          <mat-divider></mat-divider>
+          <a mat-list-item>Quienes somos</a>
+          <a mat-list-item>Contacto</a>
+          <a mat-list-item>Cómo ayudar</a>
+          <p>Nuestros animales</p>
+          <mat-divider></mat-divider>
+          <a mat-list-item>Antes de adoptar</a>
+          <a mat-list-item>Requisitos adopción</a>
+          <a mat-list-item>Gatos en adopción</a>
+          <a mat-list-item>Perros en adopción</a>
+          <a mat-list-item>Acogidos</a>
+          <a mat-list-item>Adoptados</a>
+          <p>Interesante</p>
+          <mat-divider></mat-divider>
+          <a mat-list-item>Noticias</a>
+          <a mat-list-item>Acuerdos</a>
+          <a mat-list-item>Otras protectoras</a>
+          <p>Colaboradores</p>
+          <mat-divider></mat-divider>
+          <a mat-list-item>Clínicas veterinarias</a>
+          <a mat-list-item>Tiendas</a>
+          <a mat-list-item>Otros</a>
+          <p>Síguenos (Mover a footer)</p>
+          <mat-divider></mat-divider>
+          <a mat-list-item>Foro</a>
+          <a mat-list-item>Facebook</a>
+          <a mat-list-item>Twitter</a>
         </mat-nav-list>
       </mat-sidenav>
 
       <mat-sidenav-content>
-        <p>content</p>
-        <p>content</p>
-        <p>content</p>
-        <p>content</p>
-        <p>content</p>
-        <p>content</p>
-        <p>content</p>
-        <p>content</p>
-        <p>content</p>
-        <p>content</p>
-        <p>content</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatum aperiam, ea voluptatibus veritatis atque ipsam porro corrupti quisquam fugiat aliquam quod dolores soluta tempore sint debitis adipisci itaque explicabo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatum aperiam, ea voluptatibus veritatis atque ipsam porro corrupti quisquam fugiat aliquam quod dolores soluta tempore sint debitis adipisci itaque explicabo.</p>
       </mat-sidenav-content>
     </mat-sidenav-container>
   </div>

@@ -6,31 +6,37 @@
   
 }
 
-.first-row {
+.menu-container {
   grid-row: 1 / 2;
-  grid-column: 1 / -1;
+  grid-column: 1 / 2;
+}
 
-  margin-top: 5px;
-  display: flex;
-  justify-content: space-between;
+.form-container {
+    grid-row: 1 / 2;
+    grid-column: 2 / 4;
 
-
-
-  &_loggin-form {
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 
-    & > mat-form-field {
+    & form > mat-form-field {
       margin-right: 5px;
     }
-    & > button {
+    & form > button {
       align-self: baseline;
       margin-top: 5px;
       height: 30px;
     }
   }
 
-  &_container-flag {
-    
+  .container-flag {
+    grid-row: 1 / 2;
+    grid-column: 4 / -1;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+
     &_button-spain {
       background-image: url('./../../../assets/img/spain-flag-icon.jpg');
       background-color: transparent;
@@ -51,7 +57,6 @@
       margin: 5px;
     }
   }
-}
 
 .foto-prin {
   grid-row: 2 / 3;
@@ -60,6 +65,10 @@
 .foto-secundaria_1 {
   grid-row: 3 / 4;
   grid-column: 1 / 4;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .foto-secundaria_2 {
   grid-row: 3 / 4;
